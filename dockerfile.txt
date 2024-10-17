@@ -1,0 +1,5 @@
+FROM openjdk:17-jdk-allpine
+WORKDIR /Desktop/devps/devps
+COPY Hello.java
+RUN javac Main.java
+CMD["java", "Main"]
